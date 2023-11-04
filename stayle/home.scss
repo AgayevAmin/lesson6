@@ -1,0 +1,252 @@
+@import "./mixins";  
+ body{
+    background-color: #1F1E1B;
+    color: #f0e3ca;
+ }
+
+ #top-10{
+    .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px; 
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20%;
+        align-items: center;
+        gap: 20px
+    }  
+    @include mobile{
+        display: flex !important;
+        flex-direction: row !important;
+
+    }
+    .burger{
+        display: none;
+        @include mobile{
+            display: block;
+        }  
+    }
+    &-logo{
+    
+    }
+    &-part{
+        display: flex;
+        @include tablet{
+            display: flex;
+            display: flex;
+            height: 25px;
+            align-items: center;
+            gap: 64px
+        
+        }
+        @include mobile{
+           
+        }
+        &-ul{
+            list-style: none;
+            display: flex;
+
+            @include tablet{
+                display: flex ;
+            height: 25px ;
+            align-items: center ;
+            gap: 64px ;
+            }
+            @include mobile{
+                display: none !important ;
+            }
+            .color{
+                color: chocolate;
+            }
+
+          
+        }
+        &-li{
+        margin-right: 20px;
+        }
+    }
+   }
+ }
+.section1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        @include mobile{
+            margin-left: 50px;
+            width: 100%;
+     }
+        @include tablet{
+            flex-direction: column;
+    
+        }
+    .item1{
+        color: #F0E3CA;
+        
+        h1{
+            color: #f67b00;
+            font-size: 50px;
+        }
+    
+    }
+    .item2{
+        img{
+            margin-top: 10%;
+            @include tablet{
+                width: 100%;
+                
+            }
+        }
+    
+    }
+    
+}
+.section2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include tablet{
+        margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    @include mobile {
+        flex-wrap: wrap;
+        padding: 64px;
+    }
+    .item3{
+     
+        margin-right: 40px;
+    }
+    .item4{
+        font-size: 22px;
+    }
+}
+.section3{
+    margin-top: 50px;
+    @include tablet{
+        margin-top: 20px
+    }
+    .item5{
+
+        text-align: center;
+        h1{
+            color: #f67b00;
+        }
+    }
+    .item6{
+       margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        @include tablet{
+            
+        }
+         &-blok{
+            margin-top: 50px;
+            border-radius: 10px;
+            background: #39362d;
+            flex-wrap: wrap;
+            @include tablet{
+                
+            }
+        
+            b{
+                margin-left: 35px;
+                font-size: 20px;
+            }
+          }
+    }
+}
+.section4{
+    margin-top: 100px;
+    .item7{
+        margin-top: 50px;
+        text-align: center;
+        h1{
+            color: #f67b00;
+        }
+    }
+    .item8{
+        display: flex;
+        justify-content: center;
+        @include mobile{
+            flex-direction: column;
+        }
+        
+      h1{
+        color: #f67b00;
+      }
+      p{
+        font-size: 20px;
+      }
+      &-stem{
+        margin: 0 30px ;
+        border-radius: 9px;
+        background-color: #39362d;
+      }
+    }
+}   
+#footer{
+    margin-top: 50px;
+    display: flex; gap: 50px;
+    justify-content: center;
+    align-items: center;
+    @include tablet{
+        flex-direction: column;
+    }
+
+    .footer1{
+        @include mobile{
+           margin-top: 30px;
+    }
+        
+        p{ 
+            color: #F0E3CA;
+        }
+    }
+
+    .footer-text{
+          
+
+        
+        @include mobile{
+            flex-direction: column;
+    }
+  
+    
+
+    .link{
+        display: flex;
+        .footer-2{
+            line-height: 60px;
+            
+            
+            span{
+                color: #F0E3CA;
+            }
+            h2{
+                color: #FF8303;
+                
+            }
+        }
+        .footer-3{
+            line-height: 60px;
+            span{
+                color: #F0E3CA;
+            }
+        }
+        
+    }
+}
+
+
+
+}
